@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="485.0" prefWidth="628.0" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.View.selectedResultController">
+
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="589.0" prefWidth="603.0">
+         <children>
+            <Label fx:id="lblResult" layoutX="238.0" layoutY="-23.0" text="- Result">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-14.0" layoutY="23.0" prefHeight="435.0" prefWidth="615.0" style="-fx-border-style: solid;">
+               <children>
+                  <Label fx:id="lblOp411" layoutX="100.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" text="Student Name" />
+                  <TextField fx:id="txtStuName" layoutX="189.0" layoutY="5.0" prefHeight="25.0" prefWidth="356.0" />
+                  <Label fx:id="lblOp4112" layoutX="109.0" layoutY="41.0" prefHeight="17.0" prefWidth="75.0" text="Student Year" />
+                  <TextField fx:id="txtStuYear" layoutX="189.0" layoutY="37.0" prefHeight="25.0" prefWidth="356.0" />
+                  <ListView fx:id="lvQuestionAttempts" layoutX="20.0" layoutY="121.0" prefHeight="298.0" prefWidth="581.0" />
+                  <TextField fx:id="txtPercent" layoutX="189.0" layoutY="75.0" prefHeight="25.0" prefWidth="356.0" />
+                  <Label layoutX="127.0" layoutY="79.0" prefHeight="17.0" prefWidth="57.0" text="Overall %" textAlignment="RIGHT" />
+               </children>
+            </Pane>
+            <Button fx:id="btnBack" layoutX="515.0" layoutY="-11.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="86.0" text="Back" />
+            <Label fx:id="lblOp4111" layoutX="10.0" layoutY="127.0" prefHeight="17.0" prefWidth="139.0" text="Questions and Answers : " />
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="455.0" prefWidth="638.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.View.addQuestionController">
+
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="389.0" prefWidth="598.0">
+         <children>
+            <Label layoutX="237.0" layoutY="-18.0" text="New Question">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-2.0" layoutY="28.0" prefHeight="342.0" prefWidth="606.0" style="-fx-border-style: solid;">
+               <children>
+                  <ComboBox fx:id="cbType" layoutX="83.0" layoutY="19.0" onAction="#typeChanged" prefWidth="150.0" />
+                  <Label layoutX="47.0" layoutY="24.0" text="Type" />
+                  <Label fx:id="lblQuestion" layoutX="29.0" layoutY="56.0" text="Question" />
+                  <TextField fx:id="txtQuestion" layoutX="84.0" layoutY="52.0" prefHeight="25.0" prefWidth="507.0" />
+                  <Label fx:id="lblAnswer" layoutX="34.0" layoutY="89.0" text="Answer" />
+                  <TextField fx:id="txtAnswer" layoutX="84.0" layoutY="85.0" prefHeight="25.0" prefWidth="507.0" />
+                  <Label fx:id="lblOp4" layoutX="28.0" layoutY="223.0" prefHeight="17.0" prefWidth="47.0" text="Option 4" />
+                  <Label fx:id="lblOp1" layoutX="28.0" layoutY="133.0" text="Option 1" />
+                  <Label fx:id="lblOp2" layoutX="28.0" layoutY="162.0" text="Option 2" />
+                  <Label fx:id="lblOp3" layoutX="28.0" layoutY="191.0" prefHeight="17.0" prefWidth="47.0" text="Option 3" />
+                  <TextField fx:id="txtOp1" layoutX="84.0" layoutY="129.0" prefHeight="25.0" prefWidth="507.0" />
+                  <TextField fx:id="txtOp2" layoutX="84.0" layoutY="158.0" prefHeight="25.0" prefWidth="507.0" />
+                  <TextField fx:id="txtOp3" layoutX="84.0" layoutY="186.0" prefHeight="25.0" prefWidth="507.0" />
+                  <TextField fx:id="txtOp4" layoutX="84.0" layoutY="219.0" prefHeight="25.0" prefWidth="507.0" />
+                  <Label fx:id="lblOp41" layoutX="40.0" layoutY="253.0" prefHeight="17.0" prefWidth="39.0" text="Points" />
+                  <TextField fx:id="txtPoints" layoutX="85.0" layoutY="249.0" prefHeight="25.0" prefWidth="108.0" text="10" />
+                  <Label fx:id="lblOp411" layoutX="54.0" layoutY="283.0" prefHeight="17.0" prefWidth="25.0" text="Tags" />
+                  <TextField fx:id="txtTags" layoutX="84.0" layoutY="279.0" prefHeight="25.0" prefWidth="356.0" />
+                  <Label fx:id="lblOp4111" layoutX="446.0" layoutY="283.0" prefHeight="17.0" prefWidth="150.0" text="* Seperate with comma ( , )" />
+                  <Label fx:id="lblOp4112" layoutX="54.0" layoutY="313.0" prefHeight="17.0" prefWidth="25.0" text="Year" />
+                  <TextField fx:id="txtYear" layoutX="84.0" layoutY="309.0" prefHeight="25.0" prefWidth="48.0" />
+                  <Label fx:id="lblOp41111" layoutX="135.0" layoutY="313.0" prefHeight="17.0" prefWidth="150.0" text="* Saved as an addtional Tag" />
+               </children>
+            </Pane>
+            <Button fx:id="btnSave" layoutX="214.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="25.0" prefWidth="174.0" text="Save Question" />
+            <Button fx:id="btnBack" layoutX="512.0" layoutY="-7.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="86.0" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="223.0" prefWidth="695.0" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.View.takeTestController">
+
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="589.0" prefWidth="603.0">
+         <children>
+            <Label fx:id="lblTest" layoutX="240.0" layoutY="-13.0" text="Test : ">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-8.0" layoutY="28.0" prefHeight="133.0" prefWidth="655.0" style="-fx-border-style: solid;">
+               <children>
+                  <Label fx:id="lblOp4111" layoutX="14.0" layoutY="17.0" prefHeight="17.0" prefWidth="64.0" text="Question : " />
+                  <TextArea fx:id="txtQuestion" layoutX="78.0" layoutY="14.0" prefHeight="52.0" prefWidth="543.0" />
+                  <Label fx:id="lblOp41111" layoutX="14.0" layoutY="76.0" prefHeight="17.0" prefWidth="64.0" text="Answer : " />
+                  <TextArea fx:id="txtAnswer" layoutX="78.0" layoutY="71.0" prefHeight="52.0" prefWidth="543.0" />
+                  <RadioButton fx:id="rbAnswerA" layoutX="78.0" layoutY="72.0" mnemonicParsing="false" text="Answer A" />
+                  <RadioButton fx:id="rbAnswerB" layoutX="231.0" layoutY="73.0" mnemonicParsing="false" text="Answer B" />
+                  <RadioButton fx:id="rbAnswerC" layoutX="385.0" layoutY="73.0" mnemonicParsing="false" text="Answer C" />
+                  <RadioButton fx:id="rbAnswerD" layoutX="551.0" layoutY="73.0" mnemonicParsing="false" text="Answer D" />
+               </children>
+            </Pane>
+            <Button fx:id="btnSubmitAnswer" layoutX="240.0" layoutY="169.0" mnemonicParsing="false" onAction="#submitAnswer" prefHeight="25.0" prefWidth="407.0" style="-fx-background-color: lightgreen;" text="Submit Answer" />
+            <Label fx:id="lblQuestionCount" layoutY="-12.0" prefHeight="17.0" prefWidth="109.0" text="Question 1 of 10" />
+            <Label fx:id="lblPoints" layoutX="-7.0" layoutY="164.0" prefHeight="17.0" prefWidth="109.0" text="Worth 10 Points" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
