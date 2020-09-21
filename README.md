@@ -7,5 +7,5 @@ The application should present a login form.
 You can ALWAYS login as a teacher with the login "sysadmin"
 
 If the application wont start. In intelliJ make the start up class : 
-src > main > java > assignment1 > View > App.java
+src > main > java > assignment2 > View > App.java
 
